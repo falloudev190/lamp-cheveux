@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+header {
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#video-section {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.video-container-wrapper {
+  display: flex; /* Active Flexbox */
+  flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+  gap: 20px; /* Espacement entre les vidéos */
+  justify-content: center; /* Centre les vidéos horizontalement */
+  padding: 1rem;
+}
+
+.video-container {
+  flex: 1 1 calc(33.333% - 20px); /* Chaque vidéo occupe environ 1/3 de la largeur */
+  max-width: 300px; /* Largeur maximale */
+  box-sizing: border-box; /* Inclut les marges et bordures dans la largeur totale */
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-container video {
+  display: block; /* Corrige l'affichage des vidéos */
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+      flex: 1 1 100%; /* Chaque vidéo occupe toute la largeur */
+      max-width: 100%;
+  }
+
+  header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav a {
+      margin: 0.5rem 0;
+  }
+
+  .produits {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+  }
+
+  .produit img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .hero {
+      padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+      padding: 0.5rem;
+  }
+
+  .produit {
+      padding: 0.5rem;
+  }
+
+  .btn-whatsapp, .btn-snapchat {
+      font-size: 0.8rem;
+      padding: 0.3rem 0.5rem;
+  }
+
+  footer {
+      font-size: 0.8rem;
+  }
+}
+
+nav a {
+  margin-left: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #f8f8f8;
+}
+
+.produits {
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.produit {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.produit img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.prix {
+  color: #e91e63;
+  font-weight: bold;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 22px;
+  background: #000;
+  color: #fff;
+}
+
+
+.footer-logo {
+
+  text-align: center;
+  font-size: 20px;
+
+  
+  
+ }
+ 
+ .footer-socials {
+  background: #25D366;
+   padding: 10px;
+  color: #f9f9f9;
+ }
+
+.contacts-sociaux {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-whatsapp, .btn-snapchat {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+  font-size: 1.2rem; /* Augmente la taille du texte */
+  padding: 0.8rem 1.5rem; /* Augmente l'espace interne du bouton */
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex; /* Permet d'aligner le texte et le logo */
+  align-items: center; /* Centre verticalement le contenu */
+  gap: 0.5rem; /* Espacement entre le texte et le logo */
+}
+
+.btn-snapchat {
+  background-color:rgb(234, 250, 12);
+  font-size: 1.2rem; /* Augmente la taille du texte */
+  padding: 0.8rem 1.5rem; /* Augmente l'espace interne du bouton */
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex; /* Permet d'aligner le texte et le logo */
+  align-items: center; /* Centre verticalement le contenu */
+  gap: 0.5rem; /* Espacement entre le texte et le logo */
+}
